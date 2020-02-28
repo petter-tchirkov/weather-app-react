@@ -1,0 +1,44 @@
+.weather__item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.location {
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+  transition: 1s ease-out;
+}
+.coordinates {
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+.weather__content {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  .naming {
+    font-size: 22px;
+  }
+  .weather__column_date,
+  .weather__column_temp,
+  .weather__column_max-temp,
+  .weather__column_min-temp,
+  .weather__column_pressure,
+  .weather__column_humidity,
+  .weather__column_weather {
+    border: 1px solid #fff;
+    margin: 0 5px;
+  }
+  p {
+    margin: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+  }
+}
